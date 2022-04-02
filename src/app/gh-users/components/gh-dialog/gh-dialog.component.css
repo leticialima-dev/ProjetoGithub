@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    padding: 10px 15px;
+}
+
+btn.close{
+    margin-right: 100px;
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+img { 
+    border-radius: 50%;
+    height: 80%;
+  }
+
+.img-profile{
+    height: 460px;
+    width: 100%;
+     
+}
+
+.card-user{
+    background-color: rgb(234, 232, 245);
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+.card-repositorio{
+    background-color: rgb(234, 232, 245);
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+b{
+    margin: 10px;
+    color: purple;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+h2{
+    color: purple;
+}

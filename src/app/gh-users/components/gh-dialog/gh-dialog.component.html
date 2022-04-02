@@ -1,0 +1,39 @@
+<div class="container">
+    <h2 mat-dialog-title>{{user == null ?'Procurando usuário: ' + username :  username}}</h2>
+  <div mat-dialog-content>
+    <mat-progress-spinner color="accent"
+    mode="indeterminate"
+    *ngIf="user == null; else content"></mat-progress-spinner>
+
+    <ng-template #content>
+        <figure class="img-profile">
+        <img [src]="user?.avatar_url" alt="Foto do Perfil">
+        </figure>
+        <div class="card-user">
+          <p><b>Nome: </b> <a [href]="user?.html_url" target="_blank"> <u>{{user?.name}}</u> </a></p>
+            <p><b>Usuário: </b>{{user?.login}}</p>
+            <p><b>Bio:</b> {{user?.bio}} </p>
+            <p><b>Seguidores:</b> {{user?.followers}} </p>
+            <p><b>Seguindo:</b> {{user?.following}} </p>
+            <p><b>Localização:</b> {{user?.location}} </p>
+            <p><b>Última atualização:</b> {{user?.updated_at}} </p>
+            </div>
+            <h2>Repositórios</h2>
+            <div class="card-repositorio" *ngFor="let item of reposit">
+            <p><b>Nome do repositório: </b> <a [href]="item?.html_url">{{item?.name}}</a></p>
+            <p><b>Descrição: </b> {{item?.description}} </p>
+            <p><b>Forks: </b> {{item?.forks_count}}</p>
+            <p><b>Última atualização: </b> {{pegarData(item.updated_at)}} </p>
+            <p><b>Linguagens Utilizadas:</b>
+              {{item?.language}}
+            </p>
+            <p><b>Estrelas:</b>
+              {{item?.stargazers_count}}
+            </p>
+        </div>
+    </ng-template> 
+    <div mat-dialog-actions>
+      <button  class="btn.close" mat-button mat-dialog-close appearance="accent">Fechar</button>
+  </div>
+</div>
+

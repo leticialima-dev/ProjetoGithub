@@ -1,0 +1,28 @@
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;align-items: center;
+    
+}
+
+h1{
+    color: purple;
+    display: flex;
+    text-align: center;
+    
+}
+.container .pesquisar {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.btn{
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    background-color: purple;
+    height: 40px;
+
+}
+
