@@ -1,6 +1,6 @@
 >Projeto Github
 
->Projeto realizado em Angular,modelo simples de buscador de usuário,ao inserir Username, o resultado da busca retorna dados como nome, repositórios, linguagens utilizadas do respectivo usuário.<h2>
+>Projeto realizado em Angular,modelo simples de buscador de usuário,ao inserir Username, o resultado da busca retorna dados como nome, repositórios, linguagens utilizadas do respectivo usuário.
   
 ![img1](https://user-images.githubusercontent.com/71324013/161405252-b2701c86-b4a4-4f9d-bbd8-b63fb6d76396.png)
 ![img2](https://user-images.githubusercontent.com/71324013/161408510-b6e10717-170e-468c-8b03-63ef4436635e.JPG)
